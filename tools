@@ -1,0 +1,36 @@
+rustscan
+wpscan
+httprobe
+whatweb
+wig
+
+> make Makefile-matmar
+> my custom dotfiles:
+    - bashrc
+<
+function mkcd
+{
+  command mkdir $1 && cd $1
+}>
+        
+> bin files
+//check whereis $file, if exists - skip, else install..
+
+    <sys-update sudo apt-get update; sudo apt-get update -y>
+
+    <python3 apt install python3; apt install pip3> 
+    <nmap apt install nmap>
+    <wfuzz ***>
+    <gobuster apt install gobuster>
+    <openvpn apt install openvpn>
+    
+    dnsenum, sublist3r, subbrute, wpscan
+    <tldr sudo apt-get install -y tldr>
+    <eog apt install eog>
+    <locate apt install mlocate>
+    <netstat apt install net-tools>
+    <tree apt install tree>
+        
+
+**stego**
+exiftool steghide stegcracker stegsolve.jar stegoveritas zsteg zbarimg SonicVisualiser
