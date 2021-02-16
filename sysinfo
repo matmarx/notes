@@ -1,0 +1,17 @@
+systeminfo              #or Start > System Information
+
+PS> Get-ComputerInfo    #isto
+PS> Get-PhysicalDisk    #check present disks
+^R> winver              #windows version
+
+
+        ## sys info ##
+cat /etc/os-release     #linux ver
+hostnamectl             #systemd, Linux distribution and kernel version
+lsb_release -a          #Linux Standard Base information
+uname -r                #kernel version
+cat /proc/version       #pseudo-file contains information
+dmesg                   #messages in the kernel messaging ring-buffer
+lsblk                   #disk cap
+lshw; lsusb ..
+sudo hdparm -I /dev/sda #disk info

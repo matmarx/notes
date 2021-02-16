@@ -1,0 +1,25 @@
+#1
+Boot in recovery mode. (rebbot on win10 loading)
+Go to advanced advanced - system image recovery
+next - advance - install a driver
+change from x:/ to c:/win/sys32
+rename Utilman to *_old && cmd to Utilman
+REBOOT
+Open cmd from login win
+net user
+net user <username> *
+
+#2
+Reboot and f8 and safe mod change password
+
+#3
+Boot in linux with chntpw
+cd /media/ubuntu/*/Windows/System32/config
+chntpw -l SAM
+chntpw -u $USERNAME
+
+#4
+Koon-boot (PAID)
+https://kon-boot.com/
+Lazersoft
+https://download.cnet.com/Lazesoft-Recover-My-Password-Home/3000-18501_4-10973339.html----------

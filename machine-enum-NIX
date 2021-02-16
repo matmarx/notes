@@ -1,0 +1,5 @@
+
+
+/proc/sched_debug
+/proc/net/tcp
+/proc/net/udp

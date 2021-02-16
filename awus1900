@@ -1,0 +1,17 @@
+sudo apt remove realtek-rtl88xxau-dkms
+git clone https://github.com/aircrack-ng/rtl8814au
+cd rtl8814au
+sudo make dkms_install
+
+ref https://miloserdov.org/?p=5493
+
+
+[power]
+iw reg set BO
+iwconfig wlan0 txpower 30
+---
+ifconfig wlan0 down
+iw reg set BO
+ifconfig wlan0 up
+iwconfig wlan0 channel 13
+iwconfig wlan0 txpower 30

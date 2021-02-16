@@ -1,0 +1,2 @@
+#/bin/bash
+curl -s -X POST https://www.hackthebox.eu/api/invite/generate | jq -r '.data.code' | base64 -d

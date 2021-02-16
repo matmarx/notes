@@ -1,0 +1,6 @@
+sudo systemctl status nginx
+/var/log/nginx/error.log
+cat /etc/nginx/site-enabled/default
+
+docker ps -a
+sudo docker start <ID>

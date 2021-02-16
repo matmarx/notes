@@ -1,0 +1,18 @@
+mysql -u username -p
+
+SHOW DATABASES;		#ls -a
+USE [database];		#cd database
+SHOW TABLES;		#ls -a
+DESCRIBE [table];	#file table
+SELECT * FROM [table];	#cat table
+SELECT * FROM [table] WHERE [column] LIKE "˘%{%}%"	#grep ".*{.*}.*"
+
+select * from [table] where id = 2;
+		where title = "john smith";
+		where price < 10 AND price > 5;	#price <5,10>
+select first_name, second_name from [table];
+
+create database [database];	#mkdir
+drop table [table];		#rm table
+source /path			#load database
+explain [table];		#head table

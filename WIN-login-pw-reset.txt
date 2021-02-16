@@ -1,0 +1,8 @@
+1. open cmd as admin
+2. net user <username> <new-pw>
+#to show users: net user
+
+or
+
+RMB on startmenu icon -> computer management ->
+local users -> users -> RMB -> reset pw

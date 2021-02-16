@@ -1,0 +1,103 @@
+#	distribution version
+cat /etc/issue
+cat /etc/*-release
+  cat /etc/lsb-release      # Debian based
+  cat /etc/redhat-release   # Redhat based
+
+#	kernel version
+cat /proc/version
+uname -a
+uname -mrs
+rpm -q kernel
+dmesg | grep Linux
+ls /boot | grep vmlinuz-
+
+#	Is there a printer?
+lpstat -a
+
+#	processes
+ps aux
+ps -ef
+top
+cat /etc/services
+
+#	cron
+crontab -l
+cat /etc/crontab*
+
+#	other users on sys
+w
+lsof -i
+netstat -antup
+netstat -tulpn
+last
+
+#	cached IP MAC
+arp -e
+route 
+/sbin/route -nee
+
+#	sudoers
+cat /etc/sudoers
+sudo -l
+
+#	mounted file systems
+mount
+df -h
+
+#	UNmounted file systems
+cat /etc/fstab
+
+
+#	distribution version
+cat /etc/issue
+cat /etc/*-release
+  cat /etc/lsb-release      # Debian based
+  cat /etc/redhat-release   # Redhat based
+
+#	kernel version
+cat /proc/version
+uname -a
+uname -mrs
+rpm -q kernel
+dmesg | grep Linux
+ls /boot | grep vmlinuz-
+
+#	Is there a printer?
+lpstat -a
+
+#	processes
+ps aux
+ps -ef
+top
+cat /etc/services
+
+#	cron
+crontab -l
+cat /etc/crontab*
+
+#	other users on sys
+w
+lsof -i
+netstat -antup
+netstat -tulpn
+last
+
+#	cached IP MAC
+arp -e
+route 
+/sbin/route -nee
+
+#	sudoers
+cat /etc/sudoers
+sudo -l
+
+#	mounted file systems
+mount
+df -h
+
+#	UNmounted file systems
+cat /etc/fstab
+
+
+

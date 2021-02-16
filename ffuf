@@ -1,0 +1,31 @@
+ffuf -c -w /path/to/curated.txt -u https://tesla.com/FUZZ
+ffuf -w params.txt:PARAM -w values.txt:VAL -u https://example.org/?PARAM=VAL -mr “VAL” -c
+
+
+    -u: the target URL
+    -c: add color to output
+    -r: follow redirects
+    -t: timeout in seconds (default 10)
+    -x: send through a proxy
+
+Types of requests
+
+    -d: data you’re going to send over POST
+    -H: the header value(s) you’re sending (multiple allowed)
+    -b: send cookie values
+
+Useful filters
+
+You can use -fl instead of -ml to filter instead of directly match.
+
+    -mc: match for certain HTTP codes
+    -ml: match based on the number of lines in the response
+    -ms: match based on the size of the response
+    -mw: match based on the number of words in the response
+
+Miscellaneous
+
+    -e: add additional FUZZ keywords
+    -request: a file containing a raw request
+    -o: write the output to a file
+    -mw: match based on the number of words in the response

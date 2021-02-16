@@ -1,0 +1,13 @@
+find / -perm -u=s -type f 2>/dev/null
+find
+
+-type f | d (file|directory)
+-size c|k|M|G (c-bytes,k-kilo,M-mega,G-giga)
+-user $username (owner)
+-group $group (sudoers)
+date modified
+-newermt '6/30/2020 0:00:00' (modified after given date)
+-newermt [start date range] ! -newermt [end date range] (ranged)
+date accessed
+ -newerat [start date range] ! -newerat [end date range]
+

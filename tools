@@ -34,3 +34,20 @@ function mkcd
 
 **stego**
 exiftool steghide stegcracker stegsolve.jar stegoveritas zsteg zbarimg SonicVisualiser
+n files
+//check whereis $file, if exists - skip, else install..
+
+    <sys-update sudo apt-get update; sudo apt-get update -y>
+
+    <python3 apt install python3; apt install pip3>
+    <nmap apt install nmap>
+    <wfuzz ***>
+    <gobuster apt install gobuster>
+    <openvpn apt install openvpn>
+
+
+    <tldr sudo apt-get install -y tldr>
+    <eog apt install eog>
+    <locate apt install mlocate>
+    <netstat apt install net-tools>
+    <tree apt install tree>

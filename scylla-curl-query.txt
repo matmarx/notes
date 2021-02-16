@@ -1,0 +1,1 @@
+for i in $(cat /mnt/c/Users/User/Desktop/email.txt); do printf "$i\n" && curl --silent -k "https://44.235.17.188/search?q=email:$i" | jq; sleep 2; done
