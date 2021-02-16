@@ -15,3 +15,5 @@
 
 ##Decrypt SAM w SYSTEM - spits out hashes
 >impacket-secretsdump -system SYSTEM -sam SAM local
+
+>https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993
